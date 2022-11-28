@@ -6,7 +6,7 @@ class PipHandler {
   constructor() {
     this.EventEmitter =
       Platform.OS === 'android'
-        ? new NativeEventEmitter(NativeModules.PipAndroid)
+        ? new NativeEventEmitter()
         : null;
   }
 
